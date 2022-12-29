@@ -5,10 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
- <script src="Game.js">
+ <script src="Game.js" defer>
  </script>
-  
+ <body>
+   <div class="header">
     <h1>Rock Paper Scissors</h1>
+    <h2>MAN VS COMPUTER</h2>
+    <h2>First To 5 Wins!</h2>
+   </div>
+   <div class="player">
+    <div class="cards">
+         <h2 class="cardHeader">PLAYER</h2>
+<button class="rock" data-button='rock' ></button>
+<button class="paper" data-button='paper'></button>
+<button class="scissors" data-button='scissors'></button>
+</div>
+    </div>
+    <div class="camputer">
+        <div class="cards">
+            <h2 class="cardHeader">COMPUTER</h2>
+            <div class="computer" ></div>
+            </div>
+ </div>
+    <div class="score">
+        <div class="yourScore">Player: 0</div>
+        <div class="computerScore">Computer: 0</div>
+        <div class="result">let's play!!!</div>
+    </div>
+  <div class="modal" id="endgameModal">
+    <div class="endGame">
+      <p class="modal-title" id="endgameMsg">The Game is over!</p>
+      </div>
+      <button class="btn-restart" id="restartBtn">Play again</button>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    <footer class="footer">Cpyright © 2022 Ami</footer>
 </body>
 </html>
